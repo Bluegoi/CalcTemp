@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: rgb(97, 5, 5);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background: #ef6d80;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 400px;
+}
+
+h1, #result {
+    color: #000000;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+button {
+    background: #810707;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4b0000;
+}
+    

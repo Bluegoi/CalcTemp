@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <style>
+        body {
+            color: rgb(0, 0, 0);
+        }
+    </style>
+    <div class="container" style="background-color: #ffffff;">
+        <h1><strong>Calculadora</strong> de Conversor de Temperatura</h1>
+        <br><br><br>
+        <div class="converter">
+            <label for="temperatura"><h2>Digite a temperatura:</h2></label>
+            <input type="number" id="temperatura" />
+
+            <label for="unidade"><br><h2>Converter para: </h2></label>
+            <select id="unidade">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+
+            <button onclick="convert()">Converter</button>
+            <button onclick="clearFields()">Limpar</button>
+
+            <strong><p id="convertido" style="font-size: 25px; color: rgb(182, 0, 0);"></p></strong>
+
+            <h3>Celsius para Fahrenheit: <strong>(°C × 9/5) + 32</strong>.</h3>
+            <h3>Fahrenheit para Celsius: <strong>(°F − 32) × 5/9</strong>.</h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
